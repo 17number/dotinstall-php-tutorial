@@ -80,3 +80,5 @@
           - `final public methodName`
   - `$instance = new MyClass()` でインスタンスの作成
   - `$instance->name`, `$instance->func()` でプロパティやメソッドへのアクセス
+- 抽象クラスは `abstract class` で定義
+  - メソッドに `abstract` 修飾子をつけることで、子クラスでの実装が必須となる
