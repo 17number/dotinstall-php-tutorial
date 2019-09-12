@@ -1,3 +1,16 @@
 - `<?php ?>` で PHP のコードを書ける
   - 以降にその他のタグや出力が無い場合、終了タグ(`?>`)は省略可能
 - `$ php -S <ip>[:<port>]` でビルトインサーバの起動
+- 変数の定義
+  - `$xxxx` のように先頭 `$` で変数を表現
+- 変数の型
+  - `string`
+  - `integer`
+  - `float`
+  - `boolean`
+  - 配列
+  - オブジェクト
+  - `null`
+- [`var_dump`](https://www.php.net/manual/ja/function.var-dump.php) で変数の情報を取得可能
+  - `var_dump(1)` -> `int(1)`
+  - `var_dump(1.5, "2")` -> `float(1.5) string(1) "2"`
