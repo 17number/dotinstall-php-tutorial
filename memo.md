@@ -14,3 +14,16 @@
 - [`var_dump`](https://www.php.net/manual/ja/function.var-dump.php) で変数の情報を取得可能
   - `var_dump(1)` -> `int(1)`
   - `var_dump(1.5, "2")` -> `float(1.5) string(1) "2"`
+- 定数の宣言
+  - `define(key, value);` で定数の宣言
+    - `define("MY_EMAIL", "my@email.com");
+  - 参照時に `$` をつける必要はない
+- 特殊定数
+  - 行数などの定数は最初から用意されている
+    - `__DIR__`
+    - `__FILE__`
+    - `__LINE__`
+    - `__CLASS__`
+    - `__FUNCTION__`
+    - `__METHOD__`
+    - `__NAMESPACE__`
