@@ -65,3 +65,18 @@
 - 関数は `function funcName(args) {}` で定義
   - デフォルト引数も設定可能
   - ローカル変数のスコープはネストに影響されない
+- クラスとインスタンス
+  - `class <class name> {}` でクラスの定義
+    - プロパティやメソッドのスコープを `public`, `private`, `protected` で指定
+    - `static` でクラス変数やクラスメソッドを定義
+      - 呼び出しは `MyClass::myStaticFunc()` と `::` 区切り
+      - プロパティは `MyClass::$myStaticProperty` と `::$` 区切り
+      - クラス内からは `self::myStaticFunc()` や `self::$myStaticProperty`
+    - クラス内からプロパティなどにアクセスする場合は `$this->property` という感じに `$this` を使う
+    - コンストラクタは `__constructor` で宣言
+    - 継承は `extends SuperClass` で実施
+      - 同名のプロパティやメソッドを定義してオーバーライドもできる
+        - オーバーライドを防ぐには `final` 修飾子をつけてメソッドを定義する
+          - `final public methodName`
+  - `$instance = new MyClass()` でインスタンスの作成
+  - `$instance->name`, `$instance->func()` でプロパティやメソッドへのアクセス
