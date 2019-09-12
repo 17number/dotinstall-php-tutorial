@@ -48,3 +48,7 @@
     - 文字列: 空(`""), `"0"`
     - 数値: `0`, `0.0`
     - 配列: 要素の数が 0
+- `switch/case` で条件分岐
+  - `switch (<target>)`
+  - `case <condition>:`
+    - `break` が必要
