@@ -82,3 +82,6 @@
   - `$instance->name`, `$instance->func()` でプロパティやメソッドへのアクセス
 - 抽象クラスは `abstract class` で定義
   - メソッドに `abstract` 修飾子をつけることで、子クラスでの実装が必須となる
+- `interface` でインターフェースの定義
+  - 実装が必要なクラスに対して `implements MyInterface, MyInteface2, ...` で指定
+  - 抽象クラスは実装必須でないプロパティやメソッドも定義可能
