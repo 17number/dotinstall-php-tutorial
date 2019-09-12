@@ -54,3 +54,11 @@
     - `break` が必要
 - `while`, `do/while`, `foo` でループ処理
   - `break`, `continue`
+- 配列は `array()` もしくは `[]` で定義
+  - 中身は `<key> => <value>` で宣言
+  - `<key>` を省略した場合は他言語同様に `0, 1, 2, ..` となる
+- `foreach` で配列の要素を順に取り出せる
+  - `foreach (<array> as <key> => <value>)`: `key => value` で定義した場合
+  - `foreach (<array> as <value>)`: `value` のみで定義した場合
+  - `foreach( ... ) { ...; }` は `foreach( ... ) : ...; endforeach;` とも書ける
+    - HTML タグと合わせて書く際に対応関係がわかりやすくなる
