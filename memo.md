@@ -52,3 +52,5 @@
   - `switch (<target>)`
   - `case <condition>:`
     - `break` が必要
+- `while`, `do/while`, `foo` でループ処理
+  - `break`, `continue`
