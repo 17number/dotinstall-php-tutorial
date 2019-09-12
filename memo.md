@@ -62,3 +62,6 @@
   - `foreach (<array> as <value>)`: `value` のみで定義した場合
   - `foreach( ... ) { ...; }` は `foreach( ... ) : ...; endforeach;` とも書ける
     - HTML タグと合わせて書く際に対応関係がわかりやすくなる
+- 関数は `function funcName(args) {}` で定義
+  - デフォルト引数も設定可能
+  - ローカル変数のスコープはネストに影響されない
