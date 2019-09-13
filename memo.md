@@ -105,3 +105,10 @@
   - POST のデータは `$_POST["key"]` でアクセス可能
   - `input` タグの `value` 属性に値を設定する場合は [`htmlspecialchars`](https://www.php.net/manual/ja/function.htmlspecialchars.php) を使う
     - `htmlspecialchars($username, ENT_QUOTES, 'UTF-8')`
+- Cookie を使うには `setcookie` や `$_COOKIE["key"]` を使う
+  - 登録(作成): `setcookie(key, value[, expiration])`
+    - `expiration` に `time() + 60 * 60` で 1時間有効
+      - 省略時はブラウザが閉じられるまで
+  - 参照: `$_COOKIE[key]`
+  - 削除: `setcookie(key, value, time() - 60)`
+    - expiration に過去の値を設定
