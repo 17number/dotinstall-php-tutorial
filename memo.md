@@ -101,3 +101,7 @@
 - 例外処理は `try/catch` で処理
   - `catch` した例外に対して `$e->getMessage()` でエラーメッセージの表示(取得)
   - `throw new xxxxException("Your Message);` で例外を発生されることができる
+- `$_SERVER["REQUET_METHOD"]` で HTTP Method を取得
+  - POST のデータは `$_POST["key"]` でアクセス可能
+  - `input` タグの `value` 属性に値を設定する場合は [`htmlspecialchars`](https://www.php.net/manual/ja/function.htmlspecialchars.php) を使う
+    - `htmlspecialchars($username, ENT_QUOTES, 'UTF-8')`
