@@ -85,3 +85,9 @@
 - `interface` でインターフェースの定義
   - 実装が必要なクラスに対して `implements MyInterface, MyInteface2, ...` で指定
   - 抽象クラスは実装必須でないプロパティやメソッドも定義可能
+- 別ファイルを読み込むには `require` などを利用
+  - `require`, `require_once`
+    - エラー発生時: Fatal error
+  - `include`, `include_once`
+    - エラー発生時: Warning
+  - `autoload` *クラスのみ
