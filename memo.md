@@ -98,3 +98,6 @@
     - `new hoge\fuga\User();` など
     - `use hoge\fuga as piyo` とすることで `new piyo\User();` のように省略(別名でアクセス)できる
     - `use hoge\fuga` と `as xxxx` を省略した場合、末尾の `fuga` でアクセス可能(`new fuga\User();`)
+- 例外処理は `try/catch` で処理
+  - `catch` した例外に対して `$e->getMessage()` でエラーメッセージの表示(取得)
+  - `throw new xxxxException("Your Message);` で例外を発生されることができる
