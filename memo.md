@@ -112,3 +112,6 @@
   - 参照: `$_COOKIE[key]`
   - 削除: `setcookie(key, value, time() - 60)`
     - expiration に過去の値を設定
+- `session_start()` セッション開始
+  - `$_SESSION[key] = value` でセッション作成
+  - `unset($_SESSION[key])` でセッション削除
