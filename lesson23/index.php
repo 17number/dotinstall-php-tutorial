@@ -5,7 +5,7 @@ abstract class BaseUser {
 }
 
 class User extends BaseUser {
-  public function __constructor($name) {
+  public function __construct($name) {
     $this->name = $name;
   }
   public function sayHi() {

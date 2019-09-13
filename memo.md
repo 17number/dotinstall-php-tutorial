@@ -73,7 +73,7 @@
       - プロパティは `MyClass::$myStaticProperty` と `::$` 区切り
       - クラス内からは `self::myStaticFunc()` や `self::$myStaticProperty`
     - クラス内からプロパティなどにアクセスする場合は `$this->property` という感じに `$this` を使う
-    - コンストラクタは `__constructor` で宣言
+    - コンストラクタは `__construct` で宣言
     - 継承は `extends SuperClass` で実施
       - 同名のプロパティやメソッドを定義してオーバーライドもできる
         - オーバーライドを防ぐには `final` 修飾子をつけてメソッドを定義する
