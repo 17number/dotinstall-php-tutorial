@@ -91,3 +91,10 @@
   - `include`, `include_once`
     - エラー発生時: Warning
   - `autoload` *クラスのみ
+- 名前空間は `namespace` で定義
+  - `namespace hoge\fuga;` のようにバックスラッシュ(`\`)区切りで表現
+    - 必ずファイル先頭に記載する
+  - 参照側でも同様にバックスラッシュ(`\`)区切りでアクセス
+    - `new hoge\fuga\User();` など
+    - `use hoge\fuga as piyo` とすることで `new piyo\User();` のように省略(別名でアクセス)できる
+    - `use hoge\fuga` と `as xxxx` を省略した場合、末尾の `fuga` でアクセス可能(`new fuga\User();`)
